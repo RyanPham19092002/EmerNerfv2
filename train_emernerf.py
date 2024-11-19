@@ -438,6 +438,7 @@ def main(args):
     # we need to set some hyper-parameters for the model based on the dataset,
     # e.g., aabb, number of training timestamps, number of cameras, etc, so
     # we build the dataset at first.
+    print("cfg.data.dataset", cfg.data.dataset)
     if cfg.data.dataset == "waymo":
         from datasets.waymo import WaymoDataset
 

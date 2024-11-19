@@ -27,7 +27,16 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
-
+data/
+dynamic32/
+google-cloud-sdk/
+samples/
+sweeps/
+v1.0-mini/
+work_dirs/
+dynamic32.tar.gz
+google-cloud-cli-linux-x86_64.tar
+google-cloud-cli-linux-x86_64.tar.gz
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.

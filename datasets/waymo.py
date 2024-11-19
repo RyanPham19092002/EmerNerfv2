@@ -364,6 +364,10 @@ class WaymoDataset(SceneDataset):
         data_cfg: OmegaConf,
     ) -> None:
         super().__init__(data_cfg)
+        # print("self.data_cfg", self.data_cfg)
+        # # exit(0)
+        # print("self.data_cfg.data_root", self.data_cfg.data_root)
+        # print("self.scene_idx:03d", f"{self.scene_idx:03d}")
         self.data_path = os.path.join(self.data_cfg.data_root, f"{self.scene_idx:03d}")
         assert self.data_cfg.dataset == "waymo"
         assert os.path.exists(self.data_path), f"{self.data_path} does not exist"
@@ -375,7 +379,8 @@ class WaymoDataset(SceneDataset):
         else:
             end_timestep = self.data_cfg.end_timestep
         # to make sure the last timestep is included
-        self.end_timestep = end_timestep + 1
+        # print("end_timestep", end_timestep)
+        self.end_timestep = int(end_timestep) + 1
         self.start_timestep = self.data_cfg.start_timestep
 
         # ---- create data source ---- #

@@ -80,7 +80,7 @@ class NuScenesPixelSource(ScenePixelSource):
 
         if self.nusc is None:
             self.nusc = NuScenes(
-                version="v1.0-trainval", dataroot=self.data_path, verbose=True
+                version="v1.0-mini", dataroot=self.data_path, verbose=True
             )
             self.scene = self.nusc.scene[self.scene_idx]
         total_camera_list = [
@@ -308,7 +308,7 @@ class NuScenesLiDARSource(SceneLidarSource):
 
         if self.nusc is None:
             self.nusc = NuScenes(
-                version="v1.0-trainval", dataroot=self.data_path, verbose=True
+                version="v1.0-mini", dataroot=self.data_path, verbose=True
             )
         self.scene = self.nusc.scene[self.scene_idx]
 

@@ -1,8 +1,8 @@
 DATE=`date '+%m%d'`
 
-scene_idx=$1
-start_timestep=$2
-end_timestep=$3
+scene_idx=$1111
+start_timestep=$02
+end_timestep=$03
 # reduce num_iters to 8000 for debugging
 num_iters=25000
 
