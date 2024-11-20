@@ -166,3 +166,8 @@ Consider citing our paper if you find this code or our paper is useful for your 
     year={2023}
 }
 ```
+
+## Note
+Data path : **"data/nuscenes"** or **"data/waymo"**
+
+Package Env: Please **"environment.yml"**
