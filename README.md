@@ -168,6 +168,6 @@ Consider citing our paper if you find this code or our paper is useful for your 
 ```
 
 ## Note
-Data path : **"data/nuscenes"** or **"data/waymo"**
+Data path : **"/home/vinai/Workspace/phat-intern-dev/VinAI/EmerNeRF/data/nuscenes"** or **"/home/vinai/Workspace/phat-intern-dev/VinAI/EmerNeRF/data/waymo"**
 
-Package Env: Please **"environment.yml"**
+Package Env: Please **"/home/vinai/Workspace/phat-intern-dev/VinAI/EmerNeRF/environment.yml"**
